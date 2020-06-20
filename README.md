@@ -1,2 +1,3 @@
-# InsightProject
-This is the project I am working on at Insight.
+# SlideAware
+
+This is the project I worked at Insight during my Data Engineering Fellowship.
