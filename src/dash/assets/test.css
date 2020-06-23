@@ -1,0 +1,17 @@
+#drop-down{
+    margin-bottom:50px; 
+    margin-left:100px;
+    margin-top:10px;
+    z-index:10;
+    width:100px
+}
+
+.input{
+   margin-top: 5px;
+   margin-left: 100px 
+}
+
+.graph{
+  width:50%;
+  height:80%
+} 
