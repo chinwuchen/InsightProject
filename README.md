@@ -1,12 +1,12 @@
-# SlideAware: Integrating global landslide and weather data for hazard insight
+## SlideAware: Integrating global landslide and weather data for hazard insight
 
-## Introduction
-
-
-## Data Sets
+### Introduction
 
 
-## Data Pipeline
+### Data Sets
+
+
+### Data Pipeline
 
 
 
