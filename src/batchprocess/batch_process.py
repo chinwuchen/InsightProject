@@ -13,7 +13,7 @@ from psycopg2.extras import execute_values
 
 sc = SparkContext()
 
-# return an array of years to loop over 
+# Generate an array of years to loop over 
 def gen_year_array(): 
     beg_yr = 2010
     end_yr = 2017
@@ -28,15 +28,7 @@ def db_connect():
                 password = '')
     return conn
 
-
-# pull the columns I'm storing from a noaa dataframe 
-def select_noaa_cols(row): 
-    return (row.month, row.dataval, row.latitude, row.longitude)
-
-def get_noaa_simple_array(dataframe): 
-    return dataframe.rdd.map(select_noaa_cols).collect()
-
-# extract noaa precipitation data from s3 to postgres
+# Extract noaa precipitation data from s3 to postgres
 def noaa_to_pg(year): 
     # first, handle the station info file 
     station_schema = StructType([StructField('station_id', StringType(), True),\
@@ -104,7 +96,7 @@ def noaa_to_pg(year):
     rain_arr = rain_monthly_df.rdd.map(row.month,row.dataval,row.latitude,row.longitude).collect()
     execute_values(cursor, insert_query, rain_arr, page_size=500)
 
-    # add column with postgis geography
+    # Add column with postgis geography
     alter_query = 'ALTER TABLE %s ADD COLUMN geogcol geography(Point, 4326);' % table_name
     cursor.execute(alter_query)
     update_query = 'UPDATE %s SET geogcol = ST_SetSRID(ST_MakePoint(longitude, latitude), 4326);' %table_name
