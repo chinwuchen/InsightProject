@@ -2,7 +2,7 @@
 The goal of this project is to build a data pipeline to integrate global landslide and weather information into one database with an interactive web platform for data query and visualization.
 
 ### Introduction
-Landslides are the most widespread geological hazard in the world [link](https://www.who.int/health-topics/landslides#tab=tab_1) 
+Landslides are the most widespread geological hazard in the world [[link]](https://www.who.int/health-topics/landslides#tab=tab_1) 
 
 ### Data Sets
 
