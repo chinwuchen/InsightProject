@@ -10,7 +10,7 @@ Landslides are the most widespread geological hazard and can occur anywhere in t
 
 
 ### Data Pipeline
-![Image](../images/data_pipeline.png?raw=true)
+![Image](./images/data_pipeline_tight.png?raw=true)
 
 #### Data Extraction (S3, EC2)
 
