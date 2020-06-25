@@ -25,7 +25,7 @@ Spark is used to carry out a series of data transformation steps on the historic
 The landslide catalog is processed by Python to retain selected columns to be stored in the database.
 
 #### Data Loading (PostgreSQL, PostGIS)
-The transformed data is written into tables and stored in PostgreSQL database with PostGIS extension, adding geography attribute to the coordinate of weather station location. The stored data can be retrieved by user query.
+The transformed data is written into tables and stored in PostgreSQL database with PostGIS extension, adding geography attribute to the coordinate of weather station location. The geography attribute is used for faster searching of geospatial coordinates. The stored data can be retrieved by user query through the front-end platform.
 
 #### Data Visualization (Dash)
 Dash is used to build a front-end interactive platform that visualizes the global landslide locations and, by user query of any specific landslide incident, returns associated precipitation data from weather stations near that location.
