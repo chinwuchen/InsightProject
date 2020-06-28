@@ -24,7 +24,7 @@ The global landslide catalog used in the project is compiled by NASA, documentin
 An example of selected columns of the landslide catalog is shown below.
 
 <p align="center">
-<img src="./images/slide_catalog_selected_columns.png" alt="drawing" width="800"/>
+<img src="./images/slide_catalog_selected_columns.png" alt="drawing" width="600"/>
 </p>
 
 The daily global weather data is compiled into 1.2G yearly CSV file.
