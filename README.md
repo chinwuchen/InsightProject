@@ -84,6 +84,9 @@ Dash is used to build a front-end interactive platform that visualizes the globa
 
 <a name="instructions"></a>
 ## Instructions to run this pipeline
-
-
-
+- Python packages required: pandas, numpy, psycopg2, folium, dash
+- For landslide catalog preprocessing, run command: ```python3 slide_preprocess.py```
+- For weather data batch processing, run command:
+```spark-submit --packages com.amazonaws:aws-java-sdk:1.7.4,org.apache.hadoop:hadoop-aws:2.7.7 --master spark://<master DNS>:7077 batch_process.py```
+- For landslide catalog processing, run command: ```python3 slide_process.py```
+- For dash web platform, run command: ```python3 app.py``` 
