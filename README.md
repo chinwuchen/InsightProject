@@ -24,20 +24,23 @@ The global landslide catalog used in the project is compiled by NASA, documentin
 An example of selected columns of the landslide catalog is shown below.
 
 <p align="center">
-<img src="./images/slide_catalog_selected_columns.png" alt="drawing" width="680"/>
+<img src="./images/slide_catalog_selected_columns.png" alt="drawing" width="600"/>
 </p>
 
 The daily global weather data is compiled into 1.2G yearly CSV file.
 
 <p align="center">
-<img src="./images/weather_cols.png" alt="drawing" width="420"/>
+<img src="./images/weather_cols.png" alt="drawing" width="360"/>
 </p>
 
 <a name="datapipeline"></a>
 ## Data Pipeline
 The data ETL pipeline used in this project, shown below, is entirely hosted on AWS EC2 instances and consists of a Spark cluster, PostgreSQL database, and Dash web platform.
 
-![Image](./images/data_pipeline_wbg.png?raw=true)
+<!--![Image](./images/data_pipeline_wbg.png?raw=true)-->
+<p align="center">
+<img src="./images/data_pipeline_wbg.png" alt="drawing" width="660"/>
+</p>
 
 <a name="dataingestion"></a>
 ### Data Ingestion (S3, EC2)
@@ -58,7 +61,7 @@ The transformed data is written into tables and stored in PostgreSQL database wi
 An example of the resultant yearly weather table is shown below.
 
 <p align="center">
-<img src="./images/weather_table_example.png" alt="drawing" width="420"/>
+<img src="./images/weather_table_example.png" alt="drawing" width="460"/>
 </p>
 
 <a name="datavisualization"></a>
