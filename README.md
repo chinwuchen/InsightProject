@@ -68,7 +68,7 @@ An example of the resultant yearly weather table is shown below.
 ### Data Visualization (Dash)
 Dash is used to build a front-end interactive platform that visualizes the global landslide locations and, by user query of any specific landslide incident, returns associated precipitation data from weather stations near that location.
 
-[Link to A short video demo](https://www.youtube.com/watch?v=-8xX-kZtufU)
+[Link to a short video demo](https://www.youtube.com/watch?v=-8xX-kZtufU)
 
 - A screenshot of the zoomable global map showing locations of landslide events:
 
