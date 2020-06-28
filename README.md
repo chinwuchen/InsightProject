@@ -58,14 +58,29 @@ The transformed data is written into tables and stored in PostgreSQL database wi
 An example of the resultant yearly weather table is shown below.
 
 <p align="center">
-<img src="./images/weather_cols.png" alt="drawing" width="420"/>
+<img src="./images/weather_table_example.png" alt="drawing" width="420"/>
 </p>
 
 <a name="datavisualization"></a>
 ### Data Visualization (Dash)
 Dash is used to build a front-end interactive platform that visualizes the global landslide locations and, by user query of any specific landslide incident, returns associated precipitation data from weather stations near that location.
 
+[Link to A short video demo](https://www.youtube.com/watch?v=-8xX-kZtufU)
 
+- A screenshot of the zoomable global map showing locations of landslide events:
+
+<p align="center">
+<img src="./images/dash_folium_map_screenshot.png" alt="drawing" width="420"/>
+</p>
+
+- User input of landslide location (latitude/longitude) and year returns a map showing the landslide location and accumulated rainfall data from nearby weather stations.
+
+<p align="center">
+<img src="./images/dash_accu_screenshot.png" alt="drawing" width="420"/>
+</p>
+
+<a name="instructions"></a>
+##Instructions to run this pipeline
 
 
 
